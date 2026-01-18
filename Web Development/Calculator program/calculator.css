@@ -7,6 +7,7 @@ body {
     background-color: hsl(0,0%,95%);
 }
 
+
 #calculator {
     font-family: Arial, sans-serif;
     background-color: hsl(0,0%,15%);
@@ -51,7 +52,13 @@ button {
         0 8px 0 hsl(0, 0%, 15%),
         0 12px 20px rgba(0, 0, 0, 0.4);
 }
-
+button:hover {
+    filter: brightness(1.15);
+}
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #222;
+}
 .operator-btn {
     background: radial-gradient(
         circle at top,
@@ -59,4 +66,4 @@ button {
         hsl(35, 100%, 55%),
         hsl(35, 100%, 45%)
     );
-}
+}  
